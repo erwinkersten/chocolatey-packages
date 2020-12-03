@@ -3,11 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k3d</id>
-<<<<<<< HEAD
-    <version>3.3.0.20201203</version>
-=======
-    <version>3.3.0.20201203</version>
->>>>>>> 4a707e5a7cccea8d886ab532ba0433cc3cc9cd48
+    <version>0.0.0</version>
     <packageSourceUrl>https://github.com/rancher/k3d/releases/download/v3.2.0/k3d-windows-amd64.exe</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k3d</title>
