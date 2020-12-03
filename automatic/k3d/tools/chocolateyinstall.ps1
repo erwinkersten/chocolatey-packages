@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop';
-# https://github.com/rancher/k3d/releases/download/v3.2.0/k3d-windows-amd64.exe
+﻿$ErrorActionPreference = 'Stop';
+# https://github.com/rancher/k3d/releases/download/v(semver)/k3d-windows-amd64.exe
 
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url         = 'au-update'
-$checksum    = 'au-update'
+$url         = 'https://github.com/rancher/k3d/releases/download/v3.3.0/k3d-windows-amd64.exe'
+$checksum    = '6f14a3b415ef38e527957f7aa0c82b3ff8b1f7b9589b9ca2615ad42bbbf51831'
 $checksumType = 'sha256' 
 
 $packageArgs = @{
