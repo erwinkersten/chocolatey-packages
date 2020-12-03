@@ -1,4 +1,5 @@
 import-module au
+$global:au_Force = $true
 
 # Using latest in te release url to prevent test releases being detected. 
 $releases = 'https://github.com/rancher/k3d/releases/latest'
@@ -17,14 +18,13 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $artifact  = "k3d-windows-amd64.exe"
     $url = $download_page.links | Where-Object href -match $artifact | Select-Object -First 1 -expand href
-    $version = ([regex]::Match($url,'/rancher/k3d/releases/download/(.+)/'+$artifact)).Captures.Groups[1].value
+    $version = ([regex]::Match($url,'/rancher/k3d/releases/download/v(.+)/'+$artifact)).Captures.Groups[1].value
     $url = 'https://github.com' + $url
 
-    latest =  @{ 
+    return @{ 
         URL64 = $url
         Version = $version 
     }
-    return latest
 
 }
 if ($MyInvocation.InvocationName -ne '.') {
