@@ -78,8 +78,6 @@ install:
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
-    . ./scripts/EventLogs.ps1
-    Clear-EventLogs
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
     if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne $null) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
       Set-Service wuauserv -StartupType Manual
@@ -110,7 +108,6 @@ build_script:
         }
     }
     ./update_all.ps1 -ForcedPackages $forced
-    Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
 - ps: |
     if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
