@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>k3d</id>
+    <version>3.3.0</version>
+    <packageSourceUrl>https://github.com/rancher/k3d/releases/download/v3.2.0/k3d-windows-amd64.exe</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>k3d</title>
+    <authors>Rancher</authors>
+    <projectUrl>https://k3d.io/</projectUrl>
+    <iconUrl>https://k3d.io/static/img/k3d_logo_black_blue.svg</iconUrl>
+    <licenseUrl>https://github.com/rancher/k3d/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rancher/k3d/</projectSourceUrl>
+    <docsUrl>https://k3d.io/usage/commands/</docsUrl>
+    <bugTrackerUrl>https://github.com/rancher/k3d/issues/</bugTrackerUrl>
+    <tags>k3d k3s kubernetes k8s docker rancher cluster</tags>
+    <summary>k3d is a lightweight wrapper to run k3s</summary>
+    <description><![CDATA[k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances.
+k3d makes it very easy to create single- and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
+
+Website: https://k3d.io/
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+    ]]></description>
+    <releaseNotes>https://github.com/rancher/k3d/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
