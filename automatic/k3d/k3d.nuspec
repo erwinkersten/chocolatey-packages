@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>k3d</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/rancher/k3d/releases/download/v3.2.0/k3d-windows-amd64.exe</packageSourceUrl>
+    <owners>erwinkersten</owners>
+    <title>k3d (Install)</title>
+    <authors>Rancher</authors>
+    <projectUrl>https://k3d.io/</projectUrl>
+    <iconUrl>https://k3d.io/static/img/k3d_logo_black_blue.svg</iconUrl>
+    <licenseUrl>https://github.com/rancher/k3d/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rancher/k3d/</projectSourceUrl>
+    <docsUrl>https://k3d.io/usage/commands/</docsUrl>
+    <bugTrackerUrl>https://github.com/rancher/k3d/issues/</bugTrackerUrl>
+    <tags>k3d k3s kubernetes k8s docker rancher cluster</tags>
+    <summary>k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.</summary>
+    <description>todo</description>
+    <releaseNotes>https://github.com/rancher/k3d/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
