@@ -1,0 +1,30 @@
+﻿
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The executable is downloaded from the official project release assets on github: 
+- https://github.com/rancher/k3d/releases/tag/v3.3.0    (specific version)
+- https://github.com/rancher/k3d/releases/lastest       (latest)
+
+Package can be verified with the fowllowing stepd:
+
+1. Download the k3d-windows-amd64.exe from the official project release assets on github:
+   - https://github.com/rancher/k3d/releases/download/v3.3.0/k3d-windows-amd64.exe
+
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+    checksum type: SHA256
+    checksum32: 6F14A3B415EF38E527957F7AA0C82B3FF8B1F7B9589B9CA2615AD42BBBF51831
+
+3. The hash value can be validated with the published sha256sum.txt file in the release assets. 
+   compare the hasvalue with the "_dist/k3d-windows-amd64.exe" entry
+ 
+   - https://github.com/rancher/k3d/releases/download/3.3.0/sha256sum.txt
+   - https://github.com/rancher/k3d/releases/download/<version>/sha256sum.txt
+
+
+
+
