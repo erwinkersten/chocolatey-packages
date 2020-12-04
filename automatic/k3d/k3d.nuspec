@@ -32,5 +32,6 @@ Website: https://k3d.io/
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
