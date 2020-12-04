@@ -1,5 +1,4 @@
-﻿
-From: https://github.com/rancher/k3d/blob/main/LICENSE
+﻿From: https://github.com/rancher/k3d/blob/main/LICENSE
 
 LICENSE
 
