@@ -1,19 +1,28 @@
 import-module au
-$global:au_Force = $true
+# $global:au_Force = $true
+# temp version spec
+$global:au_Version = '3.3.0.20201203' 
 
 # Using latest in te release url to prevent test releases being detected. 
 $releases = 'https://github.com/rancher/k3d/releases/latest'
 
 function global:au_SearchReplace {
     @{
+        '.\legal\VERIFICATION.txt' = @{
+            "(?i)(url:).*"       = "`$1'$($Latest.URL64)'"
+            "(?i)(checksum:).*"  = "`$1'$($Latest.Checksum64)'"
+            "(?i)(checksumType:).*"  = "`$1'$($Latest.ChecksumType64)'"
+        } 
         '.\tools\chocolateyInstall.ps1' = @{
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
-     }
+    }
 }
 
+
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'k3d' -NoSuffix}
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $artifact  = "k3d-windows-amd64.exe"
@@ -27,6 +36,4 @@ function global:au_GetLatest {
     }
 
 }
-if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 64
-}
+Update-Package -ChecksumFor none
