@@ -1,7 +1,5 @@
 import-module au
 # $global:au_Force = $true
-# temp version spec
-$global:au_Version = '3.3.0.20201203' 
 
 # Using latest in te release url to prevent test releases being detected. 
 $releases = 'https://github.com/rancher/k3d/releases/latest'
