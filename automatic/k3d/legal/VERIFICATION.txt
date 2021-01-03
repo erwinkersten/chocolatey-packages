@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/rancher/k3d/releases/download/v3.3.0/k3d-windows-amd64.exe'
+   url:'https://github.com/rancher/k3d/releases/download/v3.4.0/k3d-windows-amd64.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'6F14A3B415EF38E527957F7AA0C82B3FF8B1F7B9589B9CA2615AD42BBBF51831'
+    checksum:'4ABF345922AA9B8F206813D70D5EBC6EEC6190A334476471A05011F48297B475'
 
 File 'license.txt' is obtained from: 
    https://github.com/rancher/k3d/blob/main/LICENSE
