@@ -35,17 +35,17 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: 3282bacd81514c1a204bcd24ffdc339f
+  gist_id: 6154569d713d1d87b0a36e5781d7ef3c
 
   # Force test: gist id for test results
-  gist_id_test: 173c9108555d28584c1a20d15af6a578
+  gist_id_test: 
 
   # Chocolatey API key - to push updated packages
   api_key:
     secure: J0/gFURQPUbclpqkbXdz5gwsKj4Hy2VOwXq+FhsKOiR/mr+R3QXuRmRPy+E57Zjj # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "appveyor@erwinkersten.nl"
+- git config --global user.email "erwin.kersten@gmail.com"
 - git config --global user.name "Erwin Kersten"
 - git config --global core.safecrlf false
 
