@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rio</id>
-    <version>0.0.0</version>
+    <version>0.8.0</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/rio</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>RIO (stable)</title>

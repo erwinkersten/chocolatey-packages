@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'-'
+   url:'https://github.com/rancher/rio/releases/download/v0.8.0/rio-windows-amd64'
 
    to download the executable.
 
@@ -14,8 +14,8 @@ Package can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-    checksumType:'-'
-    checksum:'-'
+    checksumType:'sha256'
+    checksum:'83dfb50c51ed5b5496b65332f9677e546cb7da953c21f3cb93feae06def8b7e7'
 
 File 'license.txt' is obtained from: 
    https://github.com/rancher/rio/blob/master/LICENSE
