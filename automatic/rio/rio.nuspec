@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rio</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/rio</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>RIO (stable)</title>
+    <authors>Rancher</authors>
+    <projectUrl>https://rio.rancher.io/</projectUrl>
+    <iconUrl>https://rio.rancher.io/assets/logo.svg</iconUrl>
+    <licenseUrl>https://github.com/rancher/rio/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rancher/rio</projectSourceUrl>
+    <docsUrl>https://rio.rancher.io/quick-start//</docsUrl>
+    <bugTrackerUrl>https://github.com/rancher/rio/issues</bugTrackerUrl>
+    <tags>rio kubernetes k8s docker rancher cluster cli </tags>
+    <summary>Rio - Application Deployment Engine for Kubernetes</summary>
+    <description><![CDATA[## Rio - Application Deployment Engine for Kubernetes
+
+Rio is an Application Deployment Engine for Kubernetes that can be layered on top of any standard Kubernetes cluster.
+Consisting of a few Kubernetes custom resources and a CLI to enhance the user experience, users can easily deploy services to Kubernetes and automatically get continuous delivery, DNS, HTTPS, routing, monitoring, autoscaling, canary deployments, git-triggered builds, and much more.
+All it takes to get going is an existing Kubernetes cluster and the rio CLI.
+
+Website: https://rio.rancher.io/
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://github.com/rancher/rio/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
