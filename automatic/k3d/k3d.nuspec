@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k3d</id>
-    <version>3.4.0</version>
+    <version>4.0.0</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k3d</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k3d.exe</title>
@@ -19,7 +19,7 @@
     <summary>k3d is a lightweight wrapper to run k3s</summary>
     <description><![CDATA[## k3d is a lightweight wrapper to run k3s
 
-k3d is a lightweight helpern to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
 K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances.
 k3d makes it very easy to create single- and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
 
