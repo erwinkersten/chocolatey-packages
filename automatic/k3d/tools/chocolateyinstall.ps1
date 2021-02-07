@@ -2,8 +2,8 @@
 # https://github.com/rancher/k3d/releases/download/v(semver)/k3d-windows-amd64.exe
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://github.com/rancher/k3d/releases/download/v4.1.0/k3d-windows-amd64.exe'
-$checksum64     = 'B8A1E3B613002060A5064E447F04DB73061719B6F88F1FB9022C90E0493EAE27'
+$url64          = 'https://github.com/rancher/k3d/releases/download/v4.1.1/k3d-windows-amd64.exe'
+$checksum64     = 'DC13ACBA412B473AB5B602420BF61CB2149A8B99CC24A0261574E3F965F03560'
 $checksumType64 = 'sha256' 
 
 $packageArgs = @{
