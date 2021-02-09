@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k0sctl</id>
-    <version>0.0.0</version>
+    <version>0.4.0</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k0s</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k0sctl (Latest)</title>
@@ -17,7 +17,7 @@
     <bugTrackerUrl>https://github.com/k0sproject/k0sctl/issues</bugTrackerUrl>
     <tags>k0s k0sctl kubernetes k8s docker cluster</tags>
     <summary>k0sctl - A command-line management tool for k0s</summary>
-    <description><![CDATA[## k0sctl - A command-line management tool for k0s
+    <description><![CDATA[##  k0sctl - A command-line management tool for k0s
 
 A command-line bootstrapping and management tool for k0s zero friction kubernetes clusters.
 
