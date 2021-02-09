@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'x'
-$checksum64     = 'X'
+$url64          = 'https://github.com/k0sproject/k0s/releases/download/v0.10.0/k0s-v0.10.0-amd64.exe'
+$checksum64     = 'EA9B5BA939841D9F6C9FD711E8D74F663020D2FAB00AA1939720B97CC4FA2C92'
 $checksumType64 = 'sha256' 
 
 $packageArgs = @{
