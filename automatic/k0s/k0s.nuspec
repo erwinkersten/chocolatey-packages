@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>k0s</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k0s</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>k0s.exe</title>
+    <authors>k0sproject.io</authors>
+    <projectUrl>https://k0sproject.io/</projectUrl>
+    <iconUrl>https://k0sproject.io/images/k0s-logo.svg</iconUrl>
+    <licenseUrl>https://github.com/k0sproject/k0s/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/k0sproject/k0s</projectSourceUrl>
+    <docsUrl>https://docs.k0sproject.io/</docsUrl>
+    <bugTrackerUrl>https://github.com/k0sproject/k0s/issues</bugTrackerUrl>
+    <tags>k0s kubernetes k8s docker cluster</tags>
+    <summary>k0s - Zero Friction Kubernetes</summary>
+    <description><![CDATA[## k0s Kubernetes distribution
+
+k0s is an all-inclusive Kubernetes distribution with all the required bells and whistles preconfigured to make building a Kubernetes clusters a matter of just copying an executable to every host and running it.
+
+Zero Friction: k0s drastically reduces the complexity of installing and running a fully conformant Kubernetes distribution. New kube clusters can be bootstrapped in minutes. Developer friction is reduced to zero, allowing anyone, with no special skills or expertise in Kubernetes to easily get started.
+
+Zero Deps: k0s is distributed as a single binary with no host OS dependencies besides the host OS kernel. It works with any operating system without additional software packages or configuration. Any security vulnerabilities or perf issues can be fixed directly in the k0s distribution.
+
+Zero Costs: k0s is completely free for personal or commercial use, and it always will be. The source code is available on Github under Apache 2 license. It's a no brainer foundation for any Kubernetes projects and easy build upon.
+
+Website: https://k0sproject.io/
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://github.com/k0sproject/k0s/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
