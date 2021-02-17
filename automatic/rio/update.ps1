@@ -5,11 +5,6 @@ $releases = 'https://github.com/rancher/rio/releases/latest'
 
 function global:au_SearchReplace {
     @{
-        '.\legal\VERIFICATION.txt' = @{
-            "(?i)(url:).*"       = "`$1'$($Latest.URL64)'"
-            "(?i)(checksum:).*"  = "`$1'$($Latest.Checksum64)'"
-            "(?i)(checksumType:).*"  = "`$1'$($Latest.ChecksumType64)'"
-        } 
         '.\tools\chocolateyInstall.ps1' = @{
             "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
