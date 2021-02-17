@@ -14,5 +14,3 @@ $packageArgs = @{
   checksumType64 = $checksumType64 
   validExitCodes = @(0)
 }
-
-Get-ChocolateyWebFile @packageArgs
