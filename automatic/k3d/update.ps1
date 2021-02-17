@@ -1,5 +1,5 @@
 import-module au
-$global:au_Force = $true
+# $global:au_Force = $true
 # Using latest in te release url to prevent test releases being detected. 
 $releases = 'https://github.com/rancher/k3d/releases/latest'
 
