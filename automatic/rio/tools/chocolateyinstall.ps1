@@ -15,3 +15,4 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
+Get-ChocolateyWebFile @packageArgs
