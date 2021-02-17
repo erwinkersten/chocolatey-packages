@@ -2,8 +2,8 @@
 # https://github.com/rancher/k3d/releases/download/v(semver)/k3d-windows-amd64.exe
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://github.com/rancher/k3d/releases/download/v4.2.0/k3d-windows-amd64.exe'
-$checksum64     = '372DC3F40830B47ADA445D234BF2FC1B2037F5B4F205868E41DF36CC2126DAB2'
+$url64          = 'https://github.com/rancher/k3d/releases/download/v4.0.0/k3d-windows-amd64.exe'
+$checksum64     = '02253801D8DB92E51FA67D47E5C8B07CEC477B2131FCB0D2490F53435142CDCA'
 $checksumType64 = 'sha256' 
 
 $packageArgs = @{
@@ -15,5 +15,3 @@ $packageArgs = @{
   checksumType64 = $checksumType64 
   validExitCodes = @(0)
 }
-
-Get-ChocolateyWebFile @packageArgs
