@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k3d</id>
-    <version>4.2.0.20210217</version>
+    <version>4.2.0</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k3d</packageSourceUrl>
     <owners>Erwin Kersten</owners>
-    <title>k3d.exe</title>
+    <title>k3d (Stable)</title>
     <authors>Rancher</authors>
     <projectUrl>https://k3d.io/</projectUrl>
     <iconUrl>https://k3d.io/static/img/k3d_logo_black_blue.svg</iconUrl>
