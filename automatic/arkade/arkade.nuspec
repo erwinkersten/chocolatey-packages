@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>arkade</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/arkade</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>Arkade (Latest)</title>
+    <authors>Rancher</authors>
+    <projectUrl>https://k3d.io/</projectUrl>
+    <iconUrl>https://github.com/alexellis/arkade/raw/master/docs/arkade-logo-sm.png</iconUrl>
+    <licenseUrl>https://github.com/alexellis/arkade/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/alexellis/arkade</projectSourceUrl>
+    <docsUrl>https://github.com/alexellis/arkade/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/alexellis/arkade/issues</bugTrackerUrl>
+    <tags>arkade kubernetes k8s kubectl kubectx kubens nats krew kops k9s k3d k3sup helm osd kustomize</tags>
+    <summary>arkade - The Open Source Kubernetes Marketplace</summary>
+    <description><![CDATA[## arkade - The Open Source Kubernetes Marketplace
+
+arkade provides a portable marketplace for downloading your favourite devops CLIs and installing helm charts, with a single command.
+
+Website: https://get-arkade.dev/
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two please contact the maintainer(s) and let them know the package is no longer updating correctly.
+    
+]]></description>
+    <releaseNotes>https://github.com/alexellis/arkade/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
