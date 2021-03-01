@@ -7,8 +7,8 @@
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/arkade</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>Arkade (Latest)</title>
-    <authors>Rancher</authors>
-    <projectUrl>https://k3d.io/</projectUrl>
+    <authors>alexellis</authors>
+    <projectUrl>https://get-arkade.dev/</projectUrl>
     <iconUrl>https://github.com/alexellis/arkade/raw/master/docs/arkade-logo-sm.png</iconUrl>
     <licenseUrl>https://github.com/alexellis/arkade/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
