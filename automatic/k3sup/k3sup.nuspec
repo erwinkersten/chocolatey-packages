@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>k3sup</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k3sup</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>k3sup (Latest)</title>
+    <authors>alexellis</authors>
+    <projectUrl>https://k3sup.dev/</projectUrl>
+    <iconUrl>https://github.com/alexellis/k3sup/blob/master/docs/assets/k3sup.png</iconUrl>
+    <licenseUrl>https://github.com/alexellis/k3sup/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/alexellis/k3sup</projectSourceUrl>
+    <docsUrl>https://github.com/alexellis/k3sup/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/alexellis/k3sup/issues</bugTrackerUrl>
+    <tags>k3sup k3s kubernetes k8s rancher automation ssh kubectl</tags>
+    <summary>arkade - The Open Source Kubernetes Marketplace</summary>
+    <description><![CDATA[## k3sup - k3sup is a light-weight utility to get from zero to KUBECONFIG with k3s on any local or remote VM.
+
+This tool uses ssh to install k3s to a remote Linux host. First, k3s is installed using the utility script from Rancher, along with a flag for your host's public IP so that TLS works properly. The kubeconfig file on the server is then fetched and updated so that you can connect from your laptop using kubectl. You can also use it to join existing Linux hosts into a k3s cluster as agents.
+
+You may wonder why a tool like this needs to exist when you can do this sort of thing with bash.
+
+k3sup was developed to automate what can be a very manual and confusing process for many developers, who are already short on time. Once you've provisioned a VM with your favourite tooling, k3sup means you are only 60 seconds away from running kubectl get pods on your own computer. If you are a local computer, you can bypass SSH with k3sup install --local
+
+The tool is written in Go and is cross-compiled for Linux, Windows, MacOS and even on Raspberry Pi.
+
+How do you say it? Ketchup, as in tomato
+
+Website: https://k3sup.dev/
+
+Please Note: This is an automatically updated package. If you find it is out of date by more than a day or two please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://github.com/alexellis/k3sup/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
