@@ -3,7 +3,7 @@ import-module au
 # Using latest in te release url to prevent test releases being detected. 
 $owner = 'k0sproject'
 $repo = 'k0sctl' 
-$releases = "https://github.com/"+$owner+"/"+$repo+"/releases"
+$releases = "https://github.com/"+$owner+"/"+$repo+"/releases/latest"
 
 function global:au_SearchReplace {
     @{
