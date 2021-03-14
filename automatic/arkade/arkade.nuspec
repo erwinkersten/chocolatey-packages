@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>arkade</id>
-    <version>0.7.4</version>
+    <version>0.7.9</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/arkade</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>Arkade (Latest)</title>
