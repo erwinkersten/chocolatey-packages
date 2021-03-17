@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rke</id>
+    <version>4.3.0</version>
+    <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k3d</packageSourceUrl>
+    <owners>Erwin Kersten</owners>
+    <title>rke (Latest)</title>
+    <authors>Rancher</authors>
+    <projectUrl>https://rancher.com/products/rke/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/f91662c8b0c331926ad30ec35156f8bb20cf7daf/icons/rke.svg</iconUrl>
+    <licenseUrl>https://github.com/rancher/rke/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rancher/rke</projectSourceUrl>
+    <docsUrl>https://rancher.com/docs/rke/latest/en/</docsUrl>
+    <bugTrackerUrl>https://github.com/rancher/rke/issues</bugTrackerUrl>
+    <tags>rke k3s kubernetes k8s docker rancher cluster</tags>
+    <summary>Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. </summary>
+    <description><![CDATA[## Rancher Kubernetes Engine (RKE)
+
+Rancher Kubernetes Engine (RKE) is a CNCF-certified Kubernetes distribution that runs entirely within Docker containers. It works on bare-metal and virtualized servers. With RKE, the installation and operation of Kubernetes is both simplified and easily automated, and it’s entirely independent of the operating system and platform you’re running.
+
+Website: https://rancher.com/products/rke/
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two please contact the maintainer(s) and let them know the package is no longer updating correctly.
+    
+]]></description>
+    <releaseNotes>https://github.com/rancher/rke/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
