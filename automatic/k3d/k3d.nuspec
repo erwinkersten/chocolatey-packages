@@ -9,7 +9,7 @@
     <title>k3d (Stable)</title>
     <authors>Rancher</authors>
     <projectUrl>https://k3d.io/</projectUrl>
-    <iconUrl>https://k3d.io/static/img/k3d_logo_black_blue.svg</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k3d.svg</iconUrl>
     <licenseUrl>https://github.com/rancher/k3d/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rancher/k3d/</projectSourceUrl>

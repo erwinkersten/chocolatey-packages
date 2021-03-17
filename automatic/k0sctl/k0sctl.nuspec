@@ -9,7 +9,7 @@
     <title>k0sctl (Latest)</title>
     <authors>k0sproject.io</authors>
     <projectUrl>https://k0sproject.io/</projectUrl>
-    <iconUrl>https://k0sproject.io/images/k0s-logo.svg</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k0sctl.svg</iconUrl>
     <licenseUrl>https://github.com/k0sproject/k0sctl/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/k0sproject/k0sctl</projectSourceUrl>

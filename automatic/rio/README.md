@@ -1,4 +1,4 @@
-<img src="https://rio.rancher.io/assets/logo.svg" width="200" height="100"/>[](https://rio.rancher.io)
+<img src="https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/rio.svg" height="100"/>[](https://rio.rancher.io)
 
 ## Rio - Application Deployment Engine for Kubernetes
 

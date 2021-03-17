@@ -1,4 +1,4 @@
-# <img src="https://k3d.io/static/img/k3d_logo_black_blue.svg" width="200" height="100"/>[](https://k3d.io)
+# <img src="https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k3d.svg" height="100"/>[](https://k3d.io)
 
 ## k3d is a lightweight wrapper to run k3s
 

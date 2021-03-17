@@ -9,7 +9,7 @@
     <title>k3sup (Latest)</title>
     <authors>alexellis</authors>
     <projectUrl>https://k3sup.dev/</projectUrl>
-    <iconUrl>https://github.com/alexellis/k3sup/blob/master/docs/assets/k3sup.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k3sup.png</iconUrl>
     <licenseUrl>https://github.com/alexellis/k3sup/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/alexellis/k3sup</projectSourceUrl>

@@ -1,4 +1,4 @@
-# <img src="https://k0sproject.io/images/k0s-logo.svg" width="200" height="100"/>[](https://k0sproject.io/)
+# <img src="https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k0s.svg" height="100"/>[](https://k0sproject.io/)
 
 ## k0s Kubernetes distribution
 

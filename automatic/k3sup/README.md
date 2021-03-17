@@ -1,4 +1,4 @@
-# <img src="https://github.com/alexellis/k3sup/raw/master/docs/assets/k3sup.png" width="200" height="100"/>[](https://get-arkade.dev/)
+# <img src="https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/k3sup.png" height="100"/>[](https://get-arkade.dev/)
 
 ## k3sup -  k3sup is a light-weight utility to get from zero to KUBECONFIG with k3s on any local or remote VM.
 

@@ -1,4 +1,4 @@
-# <img src="https://github.com/alexellis/arkade/raw/master/docs/arkade-logo-sm.png" width="200" height="100"/>[](https://get-arkade.dev/)
+# <img src="https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/arkade.png" height="100"/>[](https://get-arkade.dev/)
 
 ## arkade - The Open Source Kubernetes Marketplace
 

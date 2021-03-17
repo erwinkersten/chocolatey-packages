@@ -9,7 +9,7 @@
     <title>RIO (stable)</title>
     <authors>Rancher</authors>
     <projectUrl>https://rio.rancher.io/</projectUrl>
-    <iconUrl>https://rio.rancher.io/assets/logo.svg</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/rio.svg</iconUrl>
     <licenseUrl>https://github.com/rancher/rio/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rancher/rio</projectSourceUrl>
