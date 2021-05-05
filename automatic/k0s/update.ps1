@@ -29,7 +29,7 @@ function global:au_GetLatest {
     
     return @{ 
         URL64 = $url
-        Version = $version 
+        Version = v$k8sver-$k0sver
     }
 
 }
