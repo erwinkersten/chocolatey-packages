@@ -4,7 +4,7 @@ import-module au
 $owner = 'k0sproject'
 $repo = 'k0s' 
 $releases = "https://github.com/"+$owner+"/"+$repo+"/releases/latest"
-https://github.com/k0sproject/k0s/releases/download/v1.21.0%2Bk0s.0/k0s-v1.21.0+k0s.0-amd64.exe
+
 
 function global:au_SearchReplace {
     @{
