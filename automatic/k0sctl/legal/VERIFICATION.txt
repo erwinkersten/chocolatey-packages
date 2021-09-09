@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/k0sproject/k0sctl/releases/download/v0.10.0/k0sctl-win-x64.exe'
+   url:'https://github.com/k0sproject/k0sctl/releases/download/v0.10.1/k0sctl-win-x64.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'4C6C0E44E474983224BE8556FAEECCA8F28E5CEEF1E92ACCC71FD5B6E88EB0B9'
+    checksum:'0D26BBFF736D04B040E36AC11D892986F686CEFBAC1D99BDC9949CD7439E6047'
 
 File 'license.txt' is obtained from: 
   https://github.com/k0sproject/k0sctl/blob/main/LICENSE
