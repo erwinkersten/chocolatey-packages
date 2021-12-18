@@ -13,13 +13,16 @@
     <licenseUrl>https://github.com/rancher/k3d/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rancher/k3d/</projectSourceUrl>
-    <docsUrl>https://k3d.io/usage/commands/</docsUrl>
+    <docsUrl>https://k3d.io/</docsUrl>
     <bugTrackerUrl>https://github.com/rancher/k3d/issues/</bugTrackerUrl>
     <tags>k3d k3s kubernetes k8s docker rancher cluster</tags>
     <summary>k3d is a lightweight wrapper to run k3s</summary>
-    <description><![CDATA[## k3d is a lightweight wrapper to run k3s
+    <description><![CDATA[## k3d - run k3s in docker
 
-k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+k3d is a wrapper CLI that helps you to easily create k3s clusters inside docker.
+Nodes of a k3d cluster are docker containers running a k3s image.
+All Nodes of a k3d cluster are part of the same docker network.
+
 K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances.
 k3d makes it very easy to create single- and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
 
