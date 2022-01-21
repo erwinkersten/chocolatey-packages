@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k0sctl</id>
-    <version>0.12.3</version>
+    <version>0.12.4</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k0s</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k0sctl (Latest)</title>
