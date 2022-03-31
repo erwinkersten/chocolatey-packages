@@ -22,11 +22,11 @@ function global:au_GetLatest {
     $regex   = "\/$owner\/$repo\/releases\/tag\/v\d{1,4}\.{0,1}\d{0,4}\.{0,1}\d{0,4}"
     $url     = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
     $version = $url -split '\/|v' | Select-Object -Last 1
-    $fileversion = $version -split '\/|%2B' | Select-Object -Last 2
-    $k8sver= $fileversion[0]
-    $k0sver = $fileversion[1]
-    $url = "https://github.com/$owner/$repo/releases/download/v$version/k0s-v$k8sver+$k0sver-amd64.exe"
-    
+    $fileversion = $version.Split('+') 
+    $k8sver= $fileversion[0] 
+    # $k0sver = $fileversion[1]
+    $url = "https://github.com/$owner/$repo/releases/download/v$version/k0s-v$version-amd64.exe"
+
     return @{ 
         URL64 = $url
         Version =  $k8sver
