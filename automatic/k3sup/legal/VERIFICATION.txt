@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/alexellis/k3sup/releases/download/0.12.2/k3sup.exe'
+   url:'https://github.com/alexellis/k3sup/releases/download/0.12.3/k3sup.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'24B0A309E923DD278382F39E9A8AD7A9560E32A3E38067CBC3D5F9717ADCA315'
+    checksum:'6D9992F98F3E8F8D7ECD286889C5B4DEDC3F15B1DD8CAB6AF7BF2BF0F9AB0C8E'
 
 File 'license.txt' is obtained from: 
    https://github.com/alexellis/k3sup/blob/master/LICENSE
