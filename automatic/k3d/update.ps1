@@ -1,7 +1,11 @@
 import-module au
 # $global:au_Force = $true
 # Using latest in te release url to prevent test releases being detected. 
-$releases = 'https://github.com/k3d-io/k3d/releases/latest'
+$owner = 'k3d-io'
+$repo = 'k3d'
+$artifact = 'k3d-windows-amd64.exe'
+$releases = "https://github.com/$owner/$repo/releases/latest"
+
 
 function global:au_SearchReplace {
     @{
@@ -17,14 +21,16 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'k3d' -NoSuffix}
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $artifact  = "k3d-windows-amd64.exe"
-    $url = $download_page.links | Where-Object href -match $artifact | Select-Object -First 1 -expand href
-    $version = ([regex]::Match($url,'/k3d-io/k3d/releases/download/v(.+)/'+$artifact)).Captures.Groups[1].value
-    $url = 'https://github.com' + $url
+    $regex   = "\/$owner\/$repo\/releases\/tag\/v\d{1,4}\.{0,1}\d{0,4}\.{0,1}\d{0,4}"
+    $url = $download_page.links | Where-Object href -match $regex| Select-Object -First 1 -expand href
+    $version = $url -split '\/|v' | Select-Object -Last 1
+    $fileversion = $version.Split('+') 
+    $ver= $fileversion[0] 
+    $url = "https://github.com/$owner/$repo/releases/download/v$version/$artifact"
 
     return @{ 
         URL64 = $url
-        Version = $version 
+        Version = $ver 
     }
 
 }

@@ -1,7 +1,11 @@
 import-module au
 # $global:au_Force = $true
 # Using latest in te release url to prevent test releases being detected. 
-$releases = 'https://github.com/alexellis/arkade/releases/latest'
+$owner = 'alexellis'
+$repo = 'arkade'
+$artifact  = 'arkade.exe'
+$releases = "https://github.com/$owner/$repo/releases/latest"
+
 function global:au_SearchReplace {
     @{
         '.\legal\VERIFICATION.txt' = @{
@@ -15,14 +19,16 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -FileNameBase 'arkade' -NoSuffix}
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $artifact  = "arkade.exe"
-    $url = $download_page.links | Where-Object href -match $artifact | Select-Object -First 1 -expand href
-    $version = ([regex]::Match($url,'/alexellis/arkade/releases/download/(.+)/'+$artifact)).Captures.Groups[1].value
-    $url = 'https://github.com' + $url
+    $regex   = "\/$owner\/$repo\/releases\/tag\/\d{0,4}\.{0,1}\d{0,4}\.{0,1}\d{0,4}"
+    $url = $download_page.links | Where-Object href -match $regex| Select-Object -First 1 -expand href
+    $version = $url -split '\/' | Select-Object -Last 1
+    $fileversion = $version.Split('+') 
+    $ver= $fileversion[0] 
+    $url = "https://github.com/$owner/$repo/releases/download/$version/$artifact"
 
     return @{ 
         URL64 = $url
-        Version = $version 
+        Version = $ver 
     }
 
 }

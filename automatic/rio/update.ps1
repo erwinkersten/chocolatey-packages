@@ -1,7 +1,10 @@
 import-module au
 # $global:au_Force = $true
 # Using latest in te release url to prevent test releases being detected. 
-$releases = 'https://github.com/rancher/rio/releases/latest'
+$owner = 'rancher'
+$repo = 'rio'
+$artifact = 'rio-windows-amd64'
+$releases = "https://github.com/$owner/$repo/releases/latest"
 
 function global:au_SearchReplace {
     @{
@@ -20,14 +23,16 @@ function global:au_BeforeUpdate {
 }
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $artifact  = "rio-windows-amd64"
-    $url = $download_page.links | Where-Object href -match $artifact | Select-Object -First 1 -expand href
-    $version = ([regex]::Match($url,'/rancher/rio/releases/download/v(.+)/'+$artifact)).Captures.Groups[1].value
-    $url = 'https://github.com' + $url
+    $regex   = "\/$owner\/$repo\/releases\/tag\/v\d{1,4}\.{0,1}\d{0,4}\.{0,1}\d{0,4}"
+    $url = $download_page.links | Where-Object href -match $regex| Select-Object -First 1 -expand href
+    $version = $url -split '\/|v' | Select-Object -Last 1
+    $fileversion = $version.Split('+') 
+    $ver= $fileversion[0] 
+    $url = "https://github.com/$owner/$repo/releases/download/v$version/$artifact"
 
     return @{ 
         URL64 = $url
-        Version = $version 
+        Version = $ver 
     }
 
 }
