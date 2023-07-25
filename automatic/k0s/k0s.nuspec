@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k0s</id>
-    <version>1.27.3</version>
+    <version>1.27.4</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k0s</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k0s.exe</title>
