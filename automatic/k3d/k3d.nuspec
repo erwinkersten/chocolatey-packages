@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>k3d</id>
-    <version>5.5.1</version>
+    <version>5.5.2</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/k3d</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>k3d (Stable)</title>
