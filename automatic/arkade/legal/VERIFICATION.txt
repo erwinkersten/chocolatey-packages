@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/alexellis/arkade/releases/download/0.10.6/arkade.exe'
+   url:'https://github.com/alexellis/arkade/releases/download/0.10.7/arkade.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'D2BC131C2D424EA451BA8B3A9EF05B8F428EC8A8A508A64C5BDDC7A1B35BC5ED'
+    checksum:'EB7328FE6F26FE54BB4F918A9F6C129F126590C680F5FD41686119FBEF7B1356'
 
 File 'license.txt' is obtained from: 
    https://github.com/alexellis/arkade/blob/master/LICENSE
