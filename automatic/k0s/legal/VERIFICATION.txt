@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/k0sproject/k0s/releases/download/v1.28.3+k0s.0/k0s-v1.28.3+k0s.0-amd64.exe'
+   url:'https://github.com/k0sproject/k0s/releases/download/v1.28.4+k0s.0/k0s-v1.28.4+k0s.0-amd64.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'633765B0608C9DAAB587A65615A7D02D98D87B5E75E73A03D315A7830DA518B3'
+    checksum:'355BF277B2038AEF6FABF09C21C617756FFDF6291FD3320D774279C2E6F973C5'
 
 File 'license.txt' is obtained from: 
    https://raw.githubusercontent.com/k0sproject/k0s/main/LICENSE
