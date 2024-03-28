@@ -8,7 +8,7 @@
     <owners>Erwin Kersten</owners>
     <title>Arkade (Latest)</title>
     <authors>alexellis</authors>
-    <projectUrl>https://get-arkade.dev/</projectUrl>
+    <projectUrl>https://github.com/alexellis/arkade</projectUrl>
     <iconUrl>https://rawcdn.githack.com/erwinkersten/chocolatey-packages/dea0cda1d84446a68a6dfdfefe362d1a9ad0de85/icons/arkade.png</iconUrl>
     <licenseUrl>https://github.com/alexellis/arkade/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
