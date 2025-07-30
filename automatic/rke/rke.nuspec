@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rke</id>
-    <version>1.8.4</version>
+    <version>1.8.5</version>
     <packageSourceUrl>https://github.com/erwinkersten/chocolatey-packages/tree/master/automatic/rke</packageSourceUrl>
     <owners>Erwin Kersten</owners>
     <title>rke (Latest)</title>
