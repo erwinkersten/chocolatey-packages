@@ -6,7 +6,7 @@ Package can be verified like this:
 
 1. Go to: 
 
-   url:'https://github.com/rancher/rke/releases/download/v1.8.6/rke_windows-amd64.exe'
+   url:'https://github.com/rancher/rke/releases/download/v1.8.7/rke_windows-amd64.exe'
 
    to download the executable.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
     checksumType:'sha256'
-    checksum:'178026E09F0993F977E56EDE014150607CDFCA984703417DBFE76585EE6CA993'
+    checksum:'5B7671F76EDC489CBF189D20794114115EC04273684FC6CE7E612C3AC7140C81'
 
 File 'license.txt' is obtained from: 
    https://github.com/rancher/rke/blob/master/LICENSE
